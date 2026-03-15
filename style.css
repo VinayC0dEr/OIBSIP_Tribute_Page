@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    }
+    
+    body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+    }
+    
+    .container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    }
+    
+    /* NAVBAR */
+    
+    nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+    }
+    
+    nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    }
+    
+    nav a{
+    color:white;
+    text-decoration:none;
+    opacity:.8;
+    }
+    
+    nav a:hover{
+    opacity:1;
+    }
+    
+    /* HERO */
+    
+    .hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    padding:40px;
+    }
+    
+    .hero img{
+    width:220px;
+    border-radius:50%;
+    border:4px solid #38bdf8;
+    margin-bottom:20px;
+    }
+    
+    .hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+    }
+    
+    /* SECTIONS */
+    
+    section{
+    padding:90px 0;
+    }
+    
+    .section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    }
+    
+    /* BIO */
+    
+    .bio{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+    }
+    
+    .bio img{
+    width:100%;
+    border-radius:10px;
+    }
+    
+    /* TIMELINE */
+    
+    .timeline{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    }
+    
+    .timeline-item{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+    transition:.3s;
+    }
+    
+    .timeline-item:hover{
+    transform:translateY(-5px);
+    }
+    
+    /* BOOKS */
+    
+    .books{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    }
+    
+    .book{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    }
+    
+    /* QUOTE */
+    
+    .quote{
+    font-size:1.3rem;
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    font-style:italic;
+    }
+    
+    /* FOOTER */
+    
+    footer{
+    background:#020617;
+    text-align:center;
+    padding:30px;
+    opacity:.7;
+    }
+    
+    /* RESPONSIVE */
+    
+    @media(max-width:900px){
+    
+    .bio{
+    grid-template-columns:1fr;
+    }
+    
+    .hero h1{
+    font-size:2.2rem;
+    }
+    
+    }
+    
+    @media(min-width:1800px){
+    
+    .hero h1{
+    font-size:4rem;
+    }
+    
+    .container{
+    max-width:1600px;
+    }
+    
+    }
